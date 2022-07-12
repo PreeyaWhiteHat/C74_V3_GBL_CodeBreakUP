@@ -1,7 +1,7 @@
 1st Section
 ------------------
 import db from '../config';
-import { ScrollView } from 'react-native-gesture-handler';
+
 
 constructor(props){
     super(props)
