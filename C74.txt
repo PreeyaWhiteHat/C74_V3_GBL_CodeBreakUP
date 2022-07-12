@@ -142,13 +142,22 @@ renderItem = ({ item, i }) => {
 
 -------------------------------------
 
-  <TouchableOpacity
+  <View style={styles.upperContainer}>
+          <View style={styles.textinputContainer}>
+            <TextInput
+              style={styles.textinput}
+              onChangeText={text => this.setState({ searchText: text })}
+              placeholder={"Type here"}
+              placeholderTextColor={"#FFFFFF"}
+            />
+            <TouchableOpacity
               style={styles.scanbutton}
               onPress={() => this.handleSearch(searchText)}
             >
               <Text style={styles.scanbuttonText}>Search</Text>
             </TouchableOpacity>
-
+          </View>
+        </View>
 ----------------------------------------------------
   lastVisibleTransaction: null,
       searchText: ""
